@@ -30,11 +30,9 @@ const Router = {
     switch (route) {
       case "/":
         pageElement = document.createElement("menu-page");
-        pageElement.textContent = "Menu";
         break;
       case "/order":
         pageElement = document.createElement("order-page");
-        pageElement.textContent = "Your Order";
         break;
       default:
         if (route.startsWith("/product-")) {

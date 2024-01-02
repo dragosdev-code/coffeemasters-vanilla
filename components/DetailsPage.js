@@ -29,8 +29,7 @@ export class DetailsPage extends HTMLElement {
       this.root.querySelector(
         ".price"
       ).textContent = `$ ${this.product.price.toFixed(2)} ea`;
-      this.root.querySelector("button").addEventListener("click", () => {
-        // TODO addToCart(this.product.id);
+      this.root.querySelector("button").addEventListener("click", async () => {
         app.router.go("/order");
       });
     } else {
